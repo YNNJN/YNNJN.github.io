@@ -11,7 +11,7 @@
 
     <title>
         
-          post - FACROTY
+          FACROTY
         
     </title>
 
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <ul>
 <li><a href="/home">Home</a></li>
 <li><a href="/about">About</a></li>
-<li><a href="/foo/bar/post">Resume</a></li>
+<li><a href="/resume">Resume</a></li>
 </ul>
 
 </div>
@@ -119,35 +119,38 @@ function sidebar_toggle() {
 
         </div>
         <div class="book-content">
-          <div class="book-post">
-  <section style="width: 35%; display: inline-block; margin-right: 5%;">
-<h1 id="김윤진-Yunjin-Kim">김윤진 Yunjin Kim</h1>
+          
+<article id="page">
+  <h1></h1>
+  <section class="left-section">
+  <img src="/asset/profile_img.png" alt="profile" style="zoom:55%; padding-bottom: 7%;" />
+<h2 id="김윤진-Yunjin-Kim">김윤진 Yunjin Kim</h2>
 <p>📧  <a href="mailto:myung2ing@gmail.com">myung2ing@gmail.com</a><br>
 🖤  <a target="_blank" rel="noopener" href="https://github.com/YNNJN">YNNJN — github link</a><br>
 📞  +82 10 4323 1595</p>
-<h2 id="Education-🏫">Education 🏫</h2>
+<h3 id="Education-🏫">Education 🏫</h3>
 <p><code>2020.01 ~ 2020.11</code> 삼성청년SW아카데미(SSAFY)<br>
 <code>2016.02 ~ 2019.05</code> 삼성디자인교육원(sadi) — 패션디자인<br>
 <code>2013.03 ~ 2018.02</code> 성균관대학교 — 화학공학<br>
 <code>2011.03 ~ 2013.02</code> 전북과학고등학교 — 화학</p>
-<h2 id="Tech-skills-👩‍💻">Tech skills 👩‍💻</h2>
+<h3 id="Tech-skills-👩‍💻">Tech skills 👩‍💻</h3>
 <p>Language — <code>JavaScript</code> <code>Python</code><br>
 Framework — <code>Vue.js</code> <code>Django</code> <code>Git</code> <code>Linux</code></p>
-<h2 id="Awards-🏆">Awards 🏆</h2>
+<h3 id="Awards-🏆">Awards 🏆</h3>
 <p><code>2020.11.21</code> 우수상 / 삼성전자<br>
 — SSAFY 자율프로젝트 2등상<br>
 <code>2020.10.08</code> 우수상 / 삼성전자<br>
 — SSAFY 특화프로젝트(도메인: 빅데이터) 2등상<br>
 <code>2020.08.21</code> 우수상 / 삼성전자<br>
 — SSAFY 공통프로젝트 3등상</p>
-<h2 id="Experience-📚">Experience 📚</h2>
+<h3 id="Experience-📚">Experience 📚</h3>
 <p><code>2019.11 ~ 2019.12</code> 콘티넨탈 오토모티브 코리아</p>
 <p>직급/업무: 사원 — 펌웨어 Reflashing, 매뉴얼 작성, 번역 업무 담당</p>
 </section>
-<section style="display: inline-block;">
-<h2 id="Projects-🎨">Projects 🎨</h2>
+<section class="right-section">
+<h3 id="Projects-🎨">Projects 🎨</h3>
 <ol>
-<li><code>2020.10 ~ 2020.11 (4주)</code> <mark>colorPOOL.md</mark></li>
+<li><code>2020.10 ~ 2020.11(4주)</code> <mark><strong><a target="_blank" rel="noopener" href="http://colorPOOL.md">colorPOOL.md</a></strong></mark></li>
 </ol>
 <ul>
 <li>설명: 발표자료 제작 서비스 — 배색을 추천받고, 마크다운에 컬러를 입히세요</li>
@@ -163,7 +166,7 @@ Framework — <code>Vue.js</code> <code>Django</code> <code>Git</code> <code>Lin
 </li>
 </ul>
 <ol start="2">
-<li><code>2020.08 ~ 2020.10 (7주)</code> <mark>colorPOOL</mark></li>
+<li><code>2020.08 ~ 2020.10(7주)</code> <mark><strong>colorPOOL</strong></mark></li>
 </ol>
 <ul>
 <li>설명: 나만의 매거진 제작 서비스 — 배색을 추천받고, 매거진으로 표현해보세요</li>
@@ -178,7 +181,7 @@ Framework — <code>Vue.js</code> <code>Django</code> <code>Git</code> <code>Lin
 </li>
 </ul>
 <ol start="3">
-<li><code>2020.07 ~ 2020.08 (6주)</code> <mark>LOCKER</mark></li>
+<li><code>2020.07 ~ 2020.08(6주)</code> <mark><strong>LOCKER</strong></mark></li>
 </ol>
 <ul>
 <li>설명: 개발자 블로그 — github과 긴밀하게 연결되는 새로운 솔루션</li>
@@ -193,7 +196,7 @@ Framework — <code>Vue.js</code> <code>Django</code> <code>Git</code> <code>Lin
 </li>
 </ul>
 <ol start="4">
-<li><code>2020.05 ~ 2020.06 (4주)</code> <mark>gramClone</mark></li>
+<li><code>2020.05 ~ 2020.06(4주)</code> <mark><strong>gramClone</strong></mark></li>
 </ol>
 <ul>
 <li>설명: 이미지 기반 SNS 플랫폼 서비스 — 인스타그램 클론</li>
@@ -208,20 +211,29 @@ Framework — <code>Vue.js</code> <code>Django</code> <code>Git</code> <code>Lin
 </li>
 </ul>
 </section>
+<style>
+  .left-section {
+    width: 35%;
+    display: inline-block;
+    margin-right: 5%;
+  }
+
+  .right-section {
+    display: inline-block;
+  }
+  
+  @media all and (max-width: 1280px) {
+    .left-section, .right-section {
+      width: 100%;
+      background-color: blue;
+    }
+  }
+</style>
+</article>
+
+<div id="paginator">
+  
 </div>
-
-
-  <div class="book-comments">
-    
-
-
-
-
-  </div>
-
-
-
-<script src="/js/book-post.js"></script>
 
         </div>
       </div>
@@ -248,15 +260,6 @@ Framework — <code>Vue.js</code> <code>Django</code> <code>Git</code> <code>Lin
     </div>
   </div>
 
-  
-    <div class="divider"></div>
-
-    <div class="link">
-      <a class="category-link" href="/categories/foo/">foo</a> <a class="category-link" href="/categories/foo/bar/">bar</a>
-
-      
-    </div>
-    
   
 
   <div class="divider"></div>
