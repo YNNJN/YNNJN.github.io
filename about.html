@@ -124,21 +124,61 @@ function sidebar_toggle() {
   <h1></h1>
   
 <div class="background">
+
   <header>
     <article>
-      <p>KimYunJin</p>
-      <p>Front-End Developer</p>
+      <p class="name">KimYunJin</p>
+      <p class="role">Front-End Developer</p>
     </article>
-    <article>
-      <p>Address</p>
+    <article class="address">
+      <p><strong>Address</strong></p>
+      <p>100, Pangyoyeok-ro, Bundang-gu, Seongnam-si</p>
+      <p>Gyeonggi-do, Republic of Korea</p>
     </article>
-    <article>
-      <p>Contact</p>
+    <article class="contact">
+      <p><strong>Contact</strong></p>
+      <p>myung2ing@gmail.com</p>
+      <p>https://github.com/YNNJN</p>
+      <p>+82 10 4323 1595</p>
     </article>
-    <article>
+    <article class="link">
       <p>https://ynnjn.github.io/</p>
     </article>
   </header>
+
+  <section class="left-section">
+    <article>
+      <p><strong>PERSONAL STATEMENT</strong></p>
+      <hr>
+    </article>
+    <article>
+      <p><strong>MY SPECIALITIES</strong></p>
+      <hr>
+    </article>
+    <article>
+      <p><strong>TECH SKILLS</strong></p>
+      <hr>
+    </article>
+  </section>
+
+  <section class="right-section">
+    <article>
+      <p><strong>EDUCATION & EXPERIENCE</strong></p>
+      <hr>
+    </article>
+    <article>
+      <p><strong>PROJECTS</strong></p>
+      <hr>
+    </article>
+    <article>
+      <p><strong>RECOGNITIONS</strong></p>
+      <hr>
+    </article>
+    <article>
+      <p><strong>HOBBIES & INTERESTS</strong></p>
+      <hr>
+    </article>
+  </section>
 </div>
 
 <style>
@@ -147,18 +187,69 @@ function sidebar_toggle() {
     margin-right: 0;
     width: 100%;
   }
+
   @media all and (max-width: 1280px) {
     .background {
       margin-right: 1.25rem;
     }
   }
+
+  header {
+    padding: 3%;
+  }
+  
   header article {
     width: calc((100% - 1.25rem)/4);
     display: inline-block;
+    /* margin: 0; */
   }
+
   header article p {
     margin: 0;
   }
+
+  header article .name {
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+  header article .role {
+
+  }
+  header article.address {
+    
+  }
+  header article.contact {
+    
+  }
+  header article.link {
+    text-align: right;
+  }
+
+  section article p {
+    margin: 0;
+  }
+
+  section article hr {
+    border: none;
+    border-top: 2px solid;
+  }
+
+  section.left-section {
+    display: inline-block;
+    width: calc((100% - 1.25rem)/2);
+  }
+
+  section.right-section {
+    display: inline-block;
+    width: calc((100% - 1.25rem)/2);
+  }
+
+  @media all and (max-width: 1280px) {
+    .left-section, .right-section {
+      width: 100%;
+    }
+  }
+
 </style>
 <script>
   window.addEventListener('DOMContentLoaded', () => {
@@ -184,7 +275,7 @@ function sidebar_toggle() {
     <div class="author-img">
       
         <figure class="avatar avatar-lg">
-          <img src="/asset/profile.jpeg" alt="...">
+          <img src="/asset/profile_img.png" alt="...">
         </figure>
       
     </div>
