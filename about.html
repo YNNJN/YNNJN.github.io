@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/asset/favicon.png" />
+    
+
+    <title>
+        
+          FACROTY
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/asset/favicon.png">
+    <span>FACROTY</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <ul>
+<li><a href="/home">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/project">Project</a></li>
+<li><a href="/resume">Resume</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          
+<article id="page">
+  <h1></h1>
+  
+<div class="resume-wrapper">
+  <!-- header -->
+  <header>
+    <h1 class="heading-container">FACROTY</h1>
+    <p class="heading-subtitle">The art in the factory</p>
+    <!-- <h2 class="name-container">김윤진 (KimYunJin)</h2> -->
+    <!-- <h3 class="job-container">FE Developer</h3> -->
+    <div class="profile-picture">
+      <img src="/asset/profile_img.png" alt="profile">
+    </div>
+    <div class="contact-container">
+      <ul class="contact-list">
+        <li>
+          <a href="tel:01000000000">+82 10 4323 1595</a>
+          <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+        </li>
+        <li>
+          <a href="mailto:your@email.com">myung2ing@gmail.com</a>
+          <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+        </li>
+        <li>
+          <a href="#" target="_blank">https://ynnjn.github.io/</a>
+          <span><i class="fa fa-globe" aria-hidden="true"></i></span>
+        </li>
+        <li>
+          <a href="https://github.com/dhparkdh/resume-for-web-developer" target="_blank">https://github.com/YNNJN</a>
+          <span><i class="fa fa-github" aria-hidden="true"></i></span>
+        </li>
+      </ul>
+    </div>
+  </header><!-- header -->
+
+  <!-- main -->
+  <section id="main">
+    <div class="resume-item-wrapper">
+
+      <!-- experience -->
+      <section class="resume-item experience">
+        <div class="inner">
+          <h2>Personal Statement</h2>
+          <ul>
+            <li>
+              <h3>김윤진(KimYunJin)</h3>
+              <!-- <h4 class="company">Global Unicorn Corp. in Bundang</h4> -->
+              <span class="date">Oct 1995 - Present</span>
+              <p class="detail">
+                안녕하세요. 계속해서 재미있는 일을 만들어가고 싶은 개발자 김윤진입니다.
+                패션디자인을 공부하던 중 아두이노, Nodebox 등으로 미디어 아트 개발을 경험하며 소프트웨어에 관심이 생겼습니다. 졸업 후에는 삼성청년SW아카데미에서 공부했고, 이곳에서 크고 작은 프로젝트를 진행하며 개발을 공부해왔습니다.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section><!-- experience -->
+
+      <!-- project -->
+      <section class="resume-item project">
+        <div class="inner">
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              <h3><a href="https://github.com/Locker-SSAFY/colorPOOL-md" target="_blank">colorPOOL.md</a></h3>
+              <p class="detail">
+                [발표자료 제작 서비스] 배색을 추천받고, 마크다운에 컬러를 입히세요
+              </p>
+              <p class="tags">#Vue #Python #Spring #Docker #NGINX #Jenkins</p>
+            </li>
+            <li>
+              <h3><a href="https://github.com/Locker-SSAFY/colorPOOL" target="_blank">colorPOOL</a></h3>
+              <p class="detail">
+                [나만의 매거진 제작 서비스] 배색을 추천받고, 매거진으로 표현해보세요
+              </p>
+              <p class="tags">#Vue #Python #Spring #Docker #NGINX #Jenkins</p>
+            </li>
+            <li>
+              <h3><a href="https://github.com/Locker-SSAFY/Locker" target="_blank">LOCKER</a></h3>
+              <p class="detail">
+                [개발자 블로그] github과 긴밀하게 연결되는 새로운 솔루션
+              </p>
+              <p class="tags">#Vue #Spring #Docker #NGINX #Jenkins</p>
+            </li>
+            <li>
+              <h3><a href="https://github.com/YNNJN/InstagramClone" target="_blank">gramClone</a></h3>
+              <p class="detail">
+                [이미지 기반 SNS 플랫폼] 인스타그램 클론
+              </p>
+              <p class="tags">#Django #Vanila Javascript</p>
+            </li>
+          </ul>
+        </div>
+      </section><!-- project -->
+
+      <!-- experince -->
+      <section class="resume-item experience">
+        <div class="inner">
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <h3>삼성청년SW아카데미 (SSAFY)</h3>
+              <h4 class="company">웹 개발 트랙 / 프로젝트에서 UX의 직관성, 구조의 확장성, 모듈의 생산성을 추구했습니다</h4>
+              <span class="date">Jan 2020 - Nov 2020</span>
+            </li>
+            <li>
+              <h3>삼성디자인교육원 (sadi)</h3>
+              <h4 class="company">패션디자인 전공 / 크리틱 기반의 수업 환경에서 디자인 프로세스를 경험했습니다</h4>
+              <span class="date">Feb 2016 - May 2019</span>
+            </li>
+            <li>
+              <h3>성균관대학교</h3>
+              <h4 class="company">화학공학 전공 / 공학적 최적화와 비즈니스 임팩트를 고민했습니다</h4>
+              <span class="date">Mar 2013 - Feb 2018</span>
+            </li>
+          </ul>
+        </div>
+      </section><!-- experince -->
+
+      <!-- skill -->
+      <section class="resume-item skill">
+        <div class="inner">
+          <h2>Skill</h2>
+          <ul>
+            <li>
+              <h3>HTML5</h3>
+              <div class="skill-bar">
+                <span class="bar" style="width: 80% ;"></span>
+              </div>
+            </li>
+            <li>
+              <h3>CSS3 & preprocessors</h3>
+              <div class="skill-bar">
+                <span class="bar" style="width: 80% ;"></span>
+              </div>
+            </li>
+            <li>
+              <h3>JavaScript (incl. ES6 onwards)</h3>
+              <div class="skill-bar">
+                <span class="bar" style="width: 60% ;"></span>
+              </div>
+            </li>
+            <li>
+              <h3>Python</h3>
+              <div class="skill-bar">
+                <span class="bar" style="width: 70% ;"></span>
+              </div>
+            </li>
+            <li>
+              <h3>SQL</h3>
+              <div class="skill-bar">
+                <span class="bar" style="width: 50% ;"></span>
+              </div>
+            </li>
+            <li>
+              <h3>Prototyping w/ Adobe XD</h3>
+              <div class="skill-bar">
+                <span class="bar" style="width: 70% ;"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section><!-- skill -->
+
+    </div>
+  </section><!-- main -->
+
+</div>
+
+
+
+
+<style>
+  * {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 ;
+  }
+
+  a {
+    color: inherit ;
+    text-decoration: none ;
+  }
+
+  ul {
+    list-style: none ;
+  }
+
+  .resume-wrapper {
+    position: relative ;
+    /* width: 960px ; */
+    margin: 30px auto 60px ;
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+    background: #fff ;
+  }
+
+
+  /* header */
+  header {
+    position: relative ;
+    padding: 10px ;
+    border-bottom: 1px solid #ededed ;
+  }
+  header h1 {
+    position: absolute ;
+    bottom: 80px ;
+    right: 150px ;
+    z-index: 1 ;
+    font-size: 42px ;
+    font-weight: bold ;
+  }
+  header p {
+    position: absolute ;
+    bottom: 105px ;
+    right: 187px ;
+    z-index: 1 ;
+    font-size: 15px ;
+    font-weight: bold ;
+  }
+  header .name-container {
+    position: absolute ;
+    left: 770px ;
+    bottom: 0 ;
+    z-index: 1 ;
+    height: 30px ;
+    padding-left: 10px ;
+    margin: 0 ;
+    font-size: 18px ;
+    line-height: 30px ;
+  }
+  header .job-container {
+    position: absolute ;
+    left: 770px ;
+    bottom: -20px ;
+    z-index: 1 ;
+    height: 20px ;
+    padding-left: 10px ;
+    margin: 0 ;
+    color: #666 ;
+    font-size: 14px ;
+    font-weight: normal ;
+    line-height: 20px ;
+  }
+  header .profile-picture {
+    position: absolute ;
+    right : 190px ;
+    bottom: -50px ;
+    z-index: 2 ;
+    width: 100px ;
+    height: 100px ;
+    border-radius: 50% ;
+    background-color: #fff;
+  }
+  header .profile-picture img {
+    width: 100px ;
+    height: 100px ;
+    border-radius: 50% ;
+    border: 1px solid rgba(0, 0, 0, 0.1) ;
+  }
+  header .contact-container {
+    position: relative ;
+    top: 0px ;
+    left: 30px ;
+  }
+  header .contact-container .contact-list li {
+    position: relative ;
+    height: 25px ;
+    padding-left: 25px ;
+    margin: 0 ;
+    color: #666 ;
+    font-size: 13px ;
+    line-height: 25px ;
+    text-align: left ;
+  }
+  header .contact-container .contact-list li span {
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+    z-index: 1 ;
+    width: 25px ;
+    height: 25px ;
+    text-align: center ;
+  }
+
+
+  /* main */
+  #main {
+    position: relative ;
+  }
+
+  #main > .resume-item-wrapper {
+    position: relative ;
+    top: 0 ;
+    left: 0 ;
+    width: 720px ;
+    padding: 75px 0 40px ;
+    border-right: 1px solid #ededed ;
+  }
+
+  #main .resume-item {
+    position: relative ;
+    padding: 0 60px ;
+    margin-bottom: 60px ;
+  }
+  #main .resume-item .inner {
+    padding-bottom: 30px ;
+    border-bottom: 1px solid #ededed ;
+  }
+  #main .resume-item h2 {
+    position: absolute ;
+    top: -10px ;
+    right: -240px ;
+    z-index: 1 ;
+    width: 240px ;
+    height: 30px ;
+    padding: 0 30px ;
+    font-size: 24px ;
+    text-align: left ;
+    text-transform: capitalize ;
+  }
+  #main ul li {
+    position: relative ;
+    margin: 0 0 30px ;
+  }
+
+
+  /* experience */
+  .experience h3 {
+    font-size: 18px ;
+  }
+  .experience .company {
+    margin: 0 0 10px ;
+    color: #959595 ;
+    font-size: 13px ;
+    font-weight: normal ;
+  }
+  .experience .date {
+    position: absolute ;
+    top: 5px ;
+    right: 0 ;
+    color: #bbb ;
+    font-size: 12px ;
+  }
+  .experience .detail {
+    margin-top: 7px ;
+    font-size: 14px ;
+  }
+
+
+  /* project */
+  .project ul li {
+    font-size: 0 ;
+    line-height: 16px ;
+  }
+  .project h3 {
+    position: relative ;
+    display: inline ;
+    color: #666 ;
+    font-size: 16px ;
+  }
+  .project h3::after {
+    content: ' - ' ;
+  }
+  .project .detail {
+    display: inline ;
+    font-size: 14px ;
+  }
+  .project .tags {
+    font-size: 12px ;
+    color: #999 ;
+  }
+
+
+  /* skill */
+  .skill {
+    margin-bottom: 0!important ;
+  }
+  .skill ul li {
+    height: 15px ;
+  }
+  .skill h3 {
+    float: left ;
+    width: 30% ;
+    height: 100% ;
+    font-size: 14px ;
+    font-weight: normal ;
+    line-height: 14px ;
+  }
+  .skill .skill-bar {
+    float: left ;
+    width: 70% ;
+    height: 100% ;
+    background: #f5f5f5 ;
+  }
+  .skill .skill-bar .bar {
+    display: block ;
+    width: 60% ;
+    height: 100% ;
+    background: #666 ;
+  }
+
+
+
+</style>
+<script>
+  // window.addEventListener('DOMContentLoaded', () => {
+  //   document.querySelector('.book-content').style.padding = 0;
+  // })
+</script>
+</article>
+
+<div id="paginator">
+  
+</div>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/asset/profile_img.png" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>김윤진 (KimYunJin)</div>
+      <div>2020-11-29</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>
